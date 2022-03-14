@@ -4,4 +4,12 @@ Rails.application.routes.draw do
 
   post "users" , to: "main#create"
 
+  put "users", to: "main#update"
+
+  delete "users", to: "main#delete"
+
+  get "home" , to: "home#new"
+
+  
+
 end

@@ -1675,3 +1675,2574 @@ No template found for MainController#create, rendering head :no_content
 Completed 204 No Content in 8ms (ActiveRecord: 0.4ms | Allocations: 1518)
 
 
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+Started GET "/" for 127.0.0.1 at 2022-03-13 12:13:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 347.1ms | Allocations: 33252)
+  Rendered layout layouts/application.html.erb (Duration: 359.5ms | Allocations: 33668)
+Completed 200 OK in 386ms (Views: 362.8ms | ActiveRecord: 2.2ms | Allocations: 45507)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:13:32 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :type. Context: { controller: MainController, action: create, request: #<ActionDispatch::Request:0x00007f22bc0aec28>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User", "controller"=>"main", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', NULL, '$2a$12$viA.FhNJXDwGswRnElctfuAsCNefDXSapvCXNeLVdGGYtL0QxrL7i', '2022-03-13 12:13:32.627246', '2022-03-13 12:13:32.627246')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (73.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 278ms (ActiveRecord: 74.0ms | Allocations: 4506)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 12:15:21 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3190)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3361)
+Completed 200 OK in 10ms (Views: 4.4ms | ActiveRecord: 2.3ms | Allocations: 6686)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:15:40 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"fine@gmail.com", "type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :type. Context: { controller: MainController, action: create, request: #<ActionDispatch::Request:0x00007f22b4015490>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"fine@gmail.com", "type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User", "controller"=>"main", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('fine@gmail.com', NULL, '$2a$12$kV1ZQwD2buEAtE7IgmEBFeX89aJALKu138vwt399FHyXWd5VDVinq', '2022-03-13 12:15:40.913506', '2022-03-13 12:15:40.913506')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (87.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 288ms (ActiveRecord: 87.4ms | Allocations: 2808)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:18:34 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"fine@gmail.com", "type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :type. Context: { controller: MainController, action: create, request: #<ActionDispatch::Request:0x00007f22b83b00d8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"fine@gmail.com", "type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User", "controller"=>"main", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('fine@gmail.com', NULL, '$2a$12$QNNfW3VUg3GvuG0s9hIcM.uQgKJbmzWo3xq8MsCC0/qv6LY20QQ9m', '2022-03-13 12:18:35.197751', '2022-03-13 12:18:35.197751')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (181.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 381ms (ActiveRecord: 185.4ms | Allocations: 5519)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 12:23:08 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 21.0ms | Allocations: 3532)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 3883)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 5081)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 12:25:33 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1783)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2132)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 3303)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 12:28:22 +0000
+  
+SyntaxError (/home/vmuser/Desktop/myApp/app/controllers/main_controller.rb:9: syntax error, unexpected ':', expecting `end'
+            render: new
+                  ^
+):
+  
+app/controllers/main_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/main_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/main_controller.rb:9: syntax error, unexpected ':', expecting `end'
+Started GET "/" for 127.0.0.1 at 2022-03-13 12:28:45 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1455)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1626)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 4796)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:29:10 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3338)
+
+
+  
+NameError (undefined local variable or method `param' for #<MainController:0x000000000195a0>
+Did you mean?  params
+               params=
+               @_params):
+  
+app/controllers/main_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:29:59 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.0ms | Allocations: 3239)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/main_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:33:33 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 782)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/main_controller.rb:7:in `create'
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:36:22 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameters: :user_type, :password, :password_confirmation. Context: { controller: MainController, action: create, request: #<ActionDispatch::Request:0x00007f227c0656d0>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User", "controller"=>"main", "action"=>"create"} }[0m
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 0.4ms | Allocations: 3758)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:36:45 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameters: :user_type, :password, :password_confirmation. Context: { controller: MainController, action: create, request: #<ActionDispatch::Request:0x00007f22bc022250>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User", "controller"=>"main", "action"=>"create"} }[0m
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1110)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:37:41 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('test@gmail.com', 'student', '$2a$12$2IEQAWbuPvWpA.F5zlB3Du/75YaPy6rh3lSVRiNfg3C73GHaNBGEi', '2022-03-13 12:37:41.642106', '2022-03-13 12:37:41.642106')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (89.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 285ms (ActiveRecord: 92.2ms | Allocations: 5194)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 12:42:27 +0000
+  
+SyntaxError (/home/vmuser/Desktop/myApp/app/controllers/main_controller.rb:9: syntax error, unexpected ':', expecting `end'
+            render: home
+                  ^
+):
+  
+app/controllers/main_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/main_controller.rb:9: syntax error, unexpected ':', expecting `end'
+app/controllers/main_controller.rb:9: syntax error, unexpected ':', expecting `end'
+Started GET "/" for 127.0.0.1 at 2022-03-13 12:43:04 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1832)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2180)
+Completed 200 OK in 10ms (Views: 4.4ms | ActiveRecord: 2.0ms | Allocations: 5832)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 12:43:21 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('test@gmail.com', 'student', '$2a$12$pPIT3oZPfBo87FOi2NhtcenpD.umJRfJ8mahiRnt7rvoYSd0kc2Iy', '2022-03-13 12:43:21.433525', '2022-03-13 12:43:21.433525')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (113.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 312ms (ActiveRecord: 113.4ms | Allocations: 3990)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"home", :controller=>"main"}):
+  
+app/controllers/main_controller.rb:9:in `create'
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:09:09 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1786)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2134)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 3293)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:09:17 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1801)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2149)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 3321)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:10:44 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1798)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2146)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 3318)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:11:18 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1795)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2145)
+Completed 200 OK in 7ms (Views: 5.6ms | Allocations: 3317)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:11:25 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1795)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2143)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 3315)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:12:37 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1795)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2143)
+Completed 200 OK in 7ms (Views: 5.8ms | Allocations: 3315)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:12:56 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1793)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2141)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 3313)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:13:13 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1800)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2148)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 3320)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:15:15 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1348)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1437)
+Completed 500 Internal Server Error in 5ms (Allocations: 2574)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="d-flex align-items-center justify-content-center">
+    <h1>Welcome page</h1>
+</div>
+
+<%= form_with model: @user , url:users_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :user_type %>
+        <br>
+        <%= form.text_field :user_type , class:"form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password%>
+        <br>
+        <%= form.password_field :password , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password_confirmation%>
+        <br>
+        <%= form.password_field :password_confirmation , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit , class: "btn btn-primary" %>
+    </div>
+
+<%end %>
+
+):
+1:    <div class="d-flex align-items-center justify-content-center">
+2:        <h1>Welcome page</h1>
+3:    </div>
+4:    
+5:    <%= form_with model: @user , url:users_path do |form|%>
+6:        <div class="mb-3">
+7:            <%= form.label :email %>
+8:            <br>
+9:            <%= form.text_field :email , class: "form_control" %>
+10:        </div>
+11:    
+12:        <div class="mb-3">
+13:            <%= form.label :user_type %>
+14:            <br>
+15:            <%= form.text_field :user_type , class:"form_control" %>
+16:        </div>
+17:    
+18:        <div class="mb-3">
+19:            <%= form.label :password%>
+20:            <br>
+21:            <%= form.password_field :password , class:"form_control"%>
+22:        </div>
+23:    
+24:        <div class="mb-3">
+25:            <%= form.label :password_confirmation%>
+26:            <br>
+27:            <%= form.password_field :password_confirmation , class:"form_control"%>
+28:        </div>
+29:    
+30:        <div class="mb-3">
+31:            <%= form.submit , class: "btn btn-primary" %>
+32:        </div>
+33:    
+34:    <%end %>
+  
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:15:52 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1336)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1425)
+Completed 500 Internal Server Error in 8ms (Allocations: 2553)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="d-flex align-items-center justify-content-center">
+    <h1>Welcome page</h1>
+</div>
+
+<%= form_with model: @user , url:users_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :user_type %>
+        <br>
+        <%= form.text_field :user_type , class:"form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password%>
+        <br>
+        <%= form.password_field :password , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password_confirmation%>
+        <br>
+        <%= form.password_field :password_confirmation , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit ,class:"btn btn-primary" %>
+    </div>
+
+<%end %>
+
+):
+1:    <div class="d-flex align-items-center justify-content-center">
+2:        <h1>Welcome page</h1>
+3:    </div>
+4:    
+5:    <%= form_with model: @user , url:users_path do |form|%>
+6:        <div class="mb-3">
+7:            <%= form.label :email %>
+8:            <br>
+9:            <%= form.text_field :email , class: "form_control" %>
+10:        </div>
+11:    
+12:        <div class="mb-3">
+13:            <%= form.label :user_type %>
+14:            <br>
+15:            <%= form.text_field :user_type , class:"form_control" %>
+16:        </div>
+17:    
+18:        <div class="mb-3">
+19:            <%= form.label :password%>
+20:            <br>
+21:            <%= form.password_field :password , class:"form_control"%>
+22:        </div>
+23:    
+24:        <div class="mb-3">
+25:            <%= form.label :password_confirmation%>
+26:            <br>
+27:            <%= form.password_field :password_confirmation , class:"form_control"%>
+28:        </div>
+29:    
+30:        <div class="mb-3">
+31:            <%= form.submit ,class:"btn btn-primary" %>
+32:        </div>
+33:    
+34:    <%end %>
+  
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:16:11 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1796)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2144)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 3310)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 13:18:05 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('test@gmail.com', 'student', '$2a$12$9WynUwhwX8hsPUMCH0pSDOQhkQn2u3d0exFo5EgurGKTilePALhGm', '2022-03-13 13:18:05.480826', '2022-03-13 13:18:05.480826')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (104.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 7)
+Completed 200 OK in 356ms (Views: 52.9ms | ActiveRecord: 105.2ms | Allocations: 5761)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 13:18:42 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 189ms (Views: 1.0ms | ActiveRecord: 2.2ms | Allocations: 4387)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 13:19:23 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 194ms (Views: 0.9ms | ActiveRecord: 2.0ms | Allocations: 4374)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:25:23 +0000
+  
+NoMethodError (undefined method `update' for #<ActionDispatch::Routing::Mapper:0x00007f22bc0d64f8 @set=#<ActionDispatch::Routing::RouteSet:0x00005608c78c8090>, @draw_paths=[#<Pathname:/home/vmuser/Desktop/myApp/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007f22bc0d64a8 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005608c77d61c8 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2022-03-13 13:28:41 +0000
+  
+NoMethodError (undefined method `update' for #<ActionDispatch::Routing::Mapper:0x00007f22bc021fd0 @set=#<ActionDispatch::Routing::RouteSet:0x00005608c78c8090>, @draw_paths=[#<Pathname:/home/vmuser/Desktop/myApp/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007f22bc021f58 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005608c77d61c8 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/posts" for 127.0.0.1 at 2022-03-13 14:56:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (27.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-13 14:56:52 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 64.4ms | Allocations: 4150)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 4557)
+Completed 200 OK in 95ms (Views: 68.3ms | ActiveRecord: 4.1ms | Allocations: 14440)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 14:59:05 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 229ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 1946)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-13 14:59:10 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('test@gmail.com', 'student', '$2a$12$5uyp5bo/hM3kX7Azc.ynLO8HXptLn/mQdSCd/vR/zc5RhzJGLn/au', '2022-03-13 14:59:10.849658', '2022-03-13 14:59:10.849658')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (195.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+Redirected to http://127.0.0.1:3000/users
+Completed 302 Found in 397ms (ActiveRecord: 196.2ms | Allocations: 4019)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-03-13 14:59:11 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-14 09:44:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4842)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5262)
+Completed 200 OK in 24ms (Views: 10.8ms | ActiveRecord: 2.8ms | Allocations: 17105)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 09:56:47 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vusumzi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('vusumzi@gmail.com', 'staff', '$2a$12$3KyTG.EfhdrGZgHsATHXpuGBFQH/suGftfAp3vzWScd2xjixUVTwO', '2022-03-14 09:56:47.562286', '2022-03-14 09:56:47.562286')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (103.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+Redirected to http://127.0.0.1:3000/users
+Completed 302 Found in 296ms (ActiveRecord: 104.2ms | Allocations: 4536)
+
+
+Started GET "/users" for 127.0.0.1 at 2022-03-14 09:56:47 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-03-14 10:04:53 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:05:04 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'staff', '$2a$12$CtTb8s/GFSsPTFTZdoQZX.gX1B8MDkFe4pkPr54y3FDjkj84OqIz.', '2022-03-14 10:05:05.027587', '2022-03-14 10:05:05.027587')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (121.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 315ms (Views: 4.3ms | ActiveRecord: 122.4ms | Allocations: 5782)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:05:12 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'staff', '$2a$12$4mZztLSDL9D3xH8gNcL86ezSeuiFT5/mIsKNFaSxAWuu/hmAA7O7e', '2022-03-14 10:05:13.040919', '2022-03-14 10:05:13.040919')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (130.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 338ms (Views: 1.1ms | ActiveRecord: 130.7ms | Allocations: 2674)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:05:26 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'staff', '$2a$12$7Hzyg9zlz.W2kTiWieX0L.sIMAcwCRIaByptsGVY2m.xqZRkXIdVS', '2022-03-14 10:05:26.306542', '2022-03-14 10:05:26.306542')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (81.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 278ms (Views: 2.8ms | ActiveRecord: 83.8ms | Allocations: 5778)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:14:28 +0000
+  
+SyntaxError (/home/vmuser/Desktop/myApp/app/controllers/main_controller.rb:9: syntax error, unexpected label, expecting '='
+...redirect_to_root_path , notice: "Success"
+...                        ^~~~~~~
+):
+  
+app/controllers/main_controller.rb:9: syntax error, unexpected label, expecting '='
+app/controllers/main_controller.rb:9: syntax error, unexpected label, expecting '='
+app/controllers/main_controller.rb:9: syntax error, unexpected label, expecting '='
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:14:58 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'staff', '$2a$12$TzGJhM.5wJfaKkytErABXuYKnYTa.de/2YFnIW2k6T3p6q9ekX1ve', '2022-03-14 10:14:58.236947', '2022-03-14 10:14:58.236947')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (66.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 67.9ms | Allocations: 7841)
+
+
+  
+NameError (undefined local variable or method `root_path' for #<MainController:0x000000000199b0>):
+  
+app/controllers/main_controller.rb:9:in `create'
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:15:51 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'staff', '$2a$12$msxyY5sHMyKHVx3FWlfBg.xLYB0I9/9ETqxc7V6aqhnogp7FnQ.3a', '2022-03-14 10:15:51.401924', '2022-03-14 10:15:51.401924')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (111.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+Completed 500 Internal Server Error in 325ms (ActiveRecord: 113.8ms | Allocations: 8004)
+
+
+  
+NameError (undefined local variable or method `root_path' for #<MainController:0x0000000001d5b0>):
+  
+app/controllers/main_controller.rb:9:in `create'
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:16:16 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'staff', '$2a$12$aw9QKup0cEPBGyFdGz6o2erdCIi1699QpPJGBDI8h1qHHe1gYf2JG', '2022-03-14 10:16:16.329405', '2022-03-14 10:16:16.329405')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (85.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1730)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 1900)
+Completed 200 OK in 298ms (Views: 15.8ms | ActiveRecord: 87.3ms | Allocations: 7815)
+
+
+Started PATCH "/users" for 127.0.0.1 at 2022-03-14 10:19:46 +0000
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+Started PATCH "/users" for 127.0.0.1 at 2022-03-14 10:19:54 +0000
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:20:05 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'staff', '$2a$12$ADA4NHGRmjxGwLP8HD926uiInBBEA1KfYZKwVfNxcfbcbjGduM0Gi', '2022-03-14 10:20:05.352873', '2022-03-14 10:20:05.352873')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (151.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1710)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 1880)
+Completed 200 OK in 360ms (Views: 14.1ms | ActiveRecord: 154.6ms | Allocations: 7775)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:20:51 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"staff", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'staff', '$2a$12$Ot0K6/5KU14b1OvAst3IAuVeXil8dGsRFRCTCDSHC12oyXHzZsY9a', '2022-03-14 10:20:51.733438', '2022-03-14 10:20:51.733438')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (138.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2182)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 2530)
+Completed 200 OK in 357ms (Views: 19.2ms | ActiveRecord: 138.6ms | Allocations: 6053)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:20:55 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1711)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1862)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2233)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:20:59 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 185ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1242)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:21:56 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2359)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2707)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3859)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:22:16 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2367)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2715)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3898)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:23:02 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2618)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2966)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4148)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:32:25 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2617)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2965)
+Completed 200 OK in 14ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 6422)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:32:29 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1853)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2004)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 2371)
+
+
+Started POST "/update" for 127.0.0.1 at 2022-03-14 10:32:40 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/update"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:36:11 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 4055)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 4143)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 5263)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:model=>#<User id: nil, email: nil, user_type: nil, password_digest: nil, created_at: nil, updated_at: nil>, :url=>"/update"}:Hash):
+    36: <h2>Update existing user</h2>
+    37: 
+    38: 
+    39: <%= form_for model:@user , url:update_path do |form|%>
+    40:     <div class="mb-3">
+    41:         <%= form.label :email %>
+    42:         <br>
+  
+app/views/main/new.html.erb:39
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:36:59 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2609)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2957)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 4134)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:37:00 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1854)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2005)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2373)
+
+
+Started POST "/update" for 127.0.0.1 at 2022-03-14 10:37:11 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/update"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:37:37 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2923)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3011)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 4124)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    36: <h2>Update existing user</h2>
+    37: 
+    38: 
+    39: <%= form_for @update , url:update_path do |form|%>
+    40:     <div class="mb-3">
+    41:         <%= form.label :email %>
+    42:         <br>
+  
+app/views/main/new.html.erb:39
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:37:44 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2610)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2958)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4135)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:41:42 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1470)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1559)
+Completed 500 Internal Server Error in 6ms (Allocations: 2696)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="d-flex align-items-center justify-content-center">
+    <h1>Welcome page</h1>
+</div>
+
+<%= form_with model: @user , url:users_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :user_type %>
+        <br>
+        <%= form.text_field :user_type , class:"form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password%>
+        <br>
+        <%= form.password_field :password , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password_confirmation%>
+        <br>
+        <%= form.password_field :password_confirmation , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit%>
+    </div>
+
+<%end %>
+
+<h2>Update existing user</h2>
+
+
+<%= form_for @user , do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+    
+    <div class="mb-3">
+            <%= form.label :user_type %>
+            <br>
+            <%= form.text_field :user_type , class:"form_control" %>
+        </div>
+    
+    <div class="mb-3">
+        <%= form.submit %>
+    </div>
+
+<%end %>
+
+):
+1:    <div class="d-flex align-items-center justify-content-center">
+2:        <h1>Welcome page</h1>
+3:    </div>
+4:    
+5:    <%= form_with model: @user , url:users_path do |form|%>
+6:        <div class="mb-3">
+7:            <%= form.label :email %>
+8:            <br>
+9:            <%= form.text_field :email , class: "form_control" %>
+10:        </div>
+11:    
+12:        <div class="mb-3">
+13:            <%= form.label :user_type %>
+14:            <br>
+15:            <%= form.text_field :user_type , class:"form_control" %>
+16:        </div>
+17:    
+18:        <div class="mb-3">
+19:            <%= form.label :password%>
+20:            <br>
+21:            <%= form.password_field :password , class:"form_control"%>
+22:        </div>
+23:    
+24:        <div class="mb-3">
+25:            <%= form.label :password_confirmation%>
+26:            <br>
+27:            <%= form.password_field :password_confirmation , class:"form_control"%>
+28:        </div>
+29:    
+30:        <div class="mb-3">
+31:            <%= form.submit%>
+32:        </div>
+33:    
+34:    <%end %>
+35:    
+36:    <h2>Update existing user</h2>
+37:    
+38:    
+39:    <%= form_for @user , do |form|%>
+40:        <div class="mb-3">
+41:            <%= form.label :email %>
+42:            <br>
+43:            <%= form.text_field :email , class: "form_control" %>
+44:        </div>
+45:        
+46:        <div class="mb-3">
+47:                <%= form.label :user_type %>
+48:                <br>
+49:                <%= form.text_field :user_type , class:"form_control" %>
+50:            </div>
+51:        
+52:        <div class="mb-3">
+53:            <%= form.submit %>
+54:        </div>
+55:    
+56:    <%end %>
+  
+app/views/main/new.html.erb:39: syntax error, unexpected `do' for block
+app/views/main/new.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/main/new.html.erb:39: syntax error, unexpected `do' for block
+app/views/main/new.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/main/new.html.erb:39: syntax error, unexpected `do' for block
+app/views/main/new.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/main/new.html.erb:39: syntax error, unexpected `do' for block
+app/views/main/new.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/main/new.html.erb:39: syntax error, unexpected `do' for block
+app/views/main/new.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+app/views/main/new.html.erb:39: syntax error, unexpected `do' for block
+app/views/main/new.html.erb:58: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:42:01 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2622)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2970)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 4136)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:43:20 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"Mpendulo@gmail.com", "user_type"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('Mpendulo@gmail.com', '', '$2a$12$iAyqrx7gZ2pm101PCXAoeelODVsMeZqkT69K6SFEAr2XVEdJxn6aa', '2022-03-14 10:43:20.202484', '2022-03-14 10:43:20.202484')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (161.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1763)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 1914)
+Completed 200 OK in 367ms (Views: 13.2ms | ActiveRecord: 162.6ms | Allocations: 4899)
+
+
+Started PATCH "/users" for 127.0.0.1 at 2022-03-14 10:43:41 +0000
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+Started PATCH "/users" for 127.0.0.1 at 2022-03-14 10:44:51 +0000
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+Started PATCH "/users" for 127.0.0.1 at 2022-03-14 10:45:21 +0000
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+Started PATCH "/users" for 127.0.0.1 at 2022-03-14 10:45:35 +0000
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+Started PATCH "/users" for 127.0.0.1 at 2022-03-14 10:45:47 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [PATCH] "/users"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:47:29 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 4243)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4650)
+Completed 200 OK in 16ms (Views: 6.0ms | ActiveRecord: 2.0ms | Allocations: 14583)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:47:45 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mpendulo@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('mpendulo@gmail.com', 'student', '$2a$12$g4FWI0wFSiCE9csX/LZ0reWGA1rYgErFL0cQZ40GrbTn9P8IcRj4S', '2022-03-14 10:47:45.363166', '2022-03-14 10:47:45.363166')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (79.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 269ms (Views: 1.9ms | ActiveRecord: 79.8ms | Allocations: 4042)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:48:47 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1891)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2062)
+Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 2.1ms | Allocations: 5389)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:48:49 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mpendulo@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1286)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:48:55 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mpendulo@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('mpendulo@gmail.com', 'student', '$2a$12$I2y0LTboMufgiszeHki8QuGXtwsm3x2EyMCHYLZ3P0N/c8fNSyWem', '2022-03-14 10:48:55.488745', '2022-03-14 10:48:55.488745')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (97.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 290ms (ActiveRecord: 98.3ms | Allocations: 2729)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:49:32 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2351)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2699)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3875)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:49:54 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2584)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2932)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4116)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 10:52:29 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2660)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3008)
+Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 2.1ms | Allocations: 6668)
+
+
+Started POST "/update" for 127.0.0.1 at 2022-03-14 10:52:35 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/update"):
+  
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:53:07 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mpendulo@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1116)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 10:53:15 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mpendulo@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 2.0ms | Allocations: 4194)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:43:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 5119)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5539)
+Completed 200 OK in 21ms (Views: 10.4ms | ActiveRecord: 2.2ms | Allocations: 17382)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:45:52 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2198)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2297)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.0ms | Allocations: 5925)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="d-flex align-items-center justify-content-center">
+    <h1>Welcome page</h1>
+</div>
+
+<%= form_with model: @user , url:users_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :user_type %>
+        <br>
+        <%= form.text_field :user_type , class:"form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password%>
+        <br>
+        <%= form.password_field :password , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password_confirmation%>
+        <br>
+        <%= form.password_field :password_confirmation , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit%>
+    </div>
+
+<%end %>
+
+<h2>Update existing user</h2>
+<%= form_for @user , url:update_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+            <%= form.label :user_type %>
+            <br>
+            <%= form.text_field :user_type , class:"form_control" %>
+        </div>
+    
+    <div class="mb-3">
+        <%= form.submit , "Update User"%>
+    </div>
+
+<%end %>
+
+):
+1:    <div class="d-flex align-items-center justify-content-center">
+2:        <h1>Welcome page</h1>
+3:    </div>
+4:    
+5:    <%= form_with model: @user , url:users_path do |form|%>
+6:        <div class="mb-3">
+7:            <%= form.label :email %>
+8:            <br>
+9:            <%= form.text_field :email , class: "form_control" %>
+10:        </div>
+11:    
+12:        <div class="mb-3">
+13:            <%= form.label :user_type %>
+14:            <br>
+15:            <%= form.text_field :user_type , class:"form_control" %>
+16:        </div>
+17:    
+18:        <div class="mb-3">
+19:            <%= form.label :password%>
+20:            <br>
+21:            <%= form.password_field :password , class:"form_control"%>
+22:        </div>
+23:    
+24:        <div class="mb-3">
+25:            <%= form.label :password_confirmation%>
+26:            <br>
+27:            <%= form.password_field :password_confirmation , class:"form_control"%>
+28:        </div>
+29:    
+30:        <div class="mb-3">
+31:            <%= form.submit%>
+32:        </div>
+33:    
+34:    <%end %>
+35:    
+36:    <h2>Update existing user</h2>
+37:    <%= form_for @user , url:update_path do |form|%>
+38:        <div class="mb-3">
+39:            <%= form.label :email %>
+40:            <br>
+41:            <%= form.text_field :email , class: "form_control" %>
+42:        </div>
+43:    
+44:        <div class="mb-3">
+45:                <%= form.label :user_type %>
+46:                <br>
+47:                <%= form.text_field :user_type , class:"form_control" %>
+48:            </div>
+49:        
+50:        <div class="mb-3">
+51:            <%= form.submit , "Update User"%>
+52:        </div>
+53:    
+54:    <%end %>
+  
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:46:04 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1464)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1554)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2707)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="d-flex align-items-center justify-content-center">
+    <h1>Welcome page</h1>
+</div>
+
+<%= form_with model: @user , url:users_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :user_type %>
+        <br>
+        <%= form.text_field :user_type , class:"form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password%>
+        <br>
+        <%= form.password_field :password , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password_confirmation%>
+        <br>
+        <%= form.password_field :password_confirmation , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit%>
+    </div>
+
+<%end %>
+
+<h2>Update existing user</h2>
+<%= form_for @user , url:update_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+            <%= form.label :user_type %>
+            <br>
+            <%= form.text_field :user_type , class:"form_control" %>
+        </div>
+    
+    <div class="mb-3">
+        <%= form.submit , "update"%>
+    </div>
+
+<%end %>
+
+):
+1:    <div class="d-flex align-items-center justify-content-center">
+2:        <h1>Welcome page</h1>
+3:    </div>
+4:    
+5:    <%= form_with model: @user , url:users_path do |form|%>
+6:        <div class="mb-3">
+7:            <%= form.label :email %>
+8:            <br>
+9:            <%= form.text_field :email , class: "form_control" %>
+10:        </div>
+11:    
+12:        <div class="mb-3">
+13:            <%= form.label :user_type %>
+14:            <br>
+15:            <%= form.text_field :user_type , class:"form_control" %>
+16:        </div>
+17:    
+18:        <div class="mb-3">
+19:            <%= form.label :password%>
+20:            <br>
+21:            <%= form.password_field :password , class:"form_control"%>
+22:        </div>
+23:    
+24:        <div class="mb-3">
+25:            <%= form.label :password_confirmation%>
+26:            <br>
+27:            <%= form.password_field :password_confirmation , class:"form_control"%>
+28:        </div>
+29:    
+30:        <div class="mb-3">
+31:            <%= form.submit%>
+32:        </div>
+33:    
+34:    <%end %>
+35:    
+36:    <h2>Update existing user</h2>
+37:    <%= form_for @user , url:update_path do |form|%>
+38:        <div class="mb-3">
+39:            <%= form.label :email %>
+40:            <br>
+41:            <%= form.text_field :email , class: "form_control" %>
+42:        </div>
+43:    
+44:        <div class="mb-3">
+45:                <%= form.label :user_type %>
+46:                <br>
+47:                <%= form.text_field :user_type , class:"form_control" %>
+48:            </div>
+49:        
+50:        <div class="mb-3">
+51:            <%= form.submit , "update"%>
+52:        </div>
+53:    
+54:    <%end %>
+  
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:51: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/views/main/new.html.erb:54: syntax error, unexpected `end', expecting ')'
+app/views/main/new.html.erb:56: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:46:11 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2646)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2995)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 4185)
+
+
+Started POST "/update" for 127.0.0.1 at 2022-03-14 12:46:15 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/update"):
+  
+Started POST "/update" for 127.0.0.1 at 2022-03-14 12:49:37 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/update"):
+  
+Started POST "/update" for 127.0.0.1 at 2022-03-14 12:49:41 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/update"):
+  
+Started POST "/update" for 127.0.0.1 at 2022-03-14 12:52:48 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/update"):
+  
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:54:27 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2614)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 2962)
+Completed 200 OK in 10ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 6462)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 12:54:29 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1635)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:55:14 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2088)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2258)
+Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 2.5ms | Allocations: 5572)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 12:55:16 +0000
+Processing by MainController#newone as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 496)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 12:56:51 +0000
+Processing by MainController#newone as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 3185)
+
+
+  
+NoMethodError (undefined method `post' for #<MainController:0x0000000001e168>):
+  
+app/controllers/main_controller.rb:19:in `newone'
+Started POST "/users" for 127.0.0.1 at 2022-03-14 12:57:24 +0000
+Processing by MainController#newone as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1111)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:57:38 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2085)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2255)
+Completed 200 OK in 10ms (Views: 4.5ms | ActiveRecord: 2.1ms | Allocations: 5629)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 12:58:21 +0000
+Processing by MainController#newone as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 505)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:58:43 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2106)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2276)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 1.8ms | Allocations: 5587)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 12:58:44 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1234)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:59:13 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 4031)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4119)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5268)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:model=>#<User id: nil, email: nil, user_type: nil, password_digest: nil, created_at: nil, updated_at: nil>, :url=>"/users"}:Hash):
+    34: <%end %>
+    35: 
+    36: <h2>Update existing user</h2>
+    37: <%= form_for model: @user , url:users_path do |form|%>
+    38:     <div class="mb-3">
+    39:         <%= form.label :email %>
+    40:         <br>
+  
+app/views/main/new.html.erb:37
+Started GET "/" for 127.0.0.1 at 2022-03-14 12:59:21 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2605)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2953)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 4129)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 12:59:24 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1110)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 13:00:05 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2731)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3079)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 4240)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:00:06 +0000
+Processing by MainController#newone as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 13:00:56 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2178)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2348)
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 2.1ms | Allocations: 5721)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:00:58 +0000
+  
+ActionController::RoutingError (No route matches [PUT] "/users"):
+  
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:01:22 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 1120)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 13:01:31 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "user_type"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 207ms (Views: 0.4ms | ActiveRecord: 2.8ms | Allocations: 7660)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:02:05 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>""}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1116)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:17:33 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 4ms (Views: 1.4ms | Allocations: 524)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 13:21:38 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2178)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2348)
+Completed 200 OK in 11ms (Views: 4.1ms | ActiveRecord: 3.1ms | Allocations: 5816)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:21:40 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 514)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:21:55 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1116)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:22:19 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1135)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:22:44 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1299)
+
+
+  
+NoMethodError (undefined method `email' for :user:Symbol):
+  
+app/controllers/main_controller.rb:15:in `update'
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:23:45 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 1123)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:28:52 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1117)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 13:35:24 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('william@gmail.com', 'student', '$2a$12$y3.0IDttOxNL124ONt32h.2Ll3wUUL/wc5Hbrna5AQbDeLlDLZ..i', '2022-03-14 13:35:24.881961', '2022-03-14 13:35:24.881961')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (118.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 321ms (ActiveRecord: 121.2ms | Allocations: 6401)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:35:36 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"william@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'william@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE `users` SET `users`.`user_type` = 'staff', `users`.`updated_at` = '2022-03-14 13:35:36.254750' WHERE `users`.`id` = 1[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (145.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 198ms (Views: 3.8ms | ActiveRecord: 146.6ms | Allocations: 5480)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 13:36:26 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vusumzi@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('vusumzi@gmail.com', 'student', '$2a$12$Z5nAk7eWZdfBK4whNk4ONOJ2zA5tItGOXcL42ZqZnPbGNoSekuyV6', '2022-03-14 13:36:26.786740', '2022-03-14 13:36:26.786740')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (158.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 366ms (ActiveRecord: 159.1ms | Allocations: 2576)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 13:36:40 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vusumzi@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'vusumzi@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE `users` SET `users`.`user_type` = 'staff', `users`.`updated_at` = '2022-03-14 13:36:40.561561' WHERE `users`.`id` = 2[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (161.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 173ms (Views: 1.4ms | ActiveRecord: 162.3ms | Allocations: 2948)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:03:12 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2724)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3072)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 4249)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:05:12 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 6866)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 6954)
+Completed 500 Internal Server Error in 15ms (Allocations: 8094)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `delete' for #<ActionView::Base:0x0000000004f380>):
+    52:     </div>
+    53: 
+    54:     <h2>Remove existing user</h2>
+    55:     <%= form_for @user, :method => delete do |form|%>
+    56:         <div class="mb-3">
+    57:         <%= form.label :email %>
+    58:         <br>
+  
+app/views/main/new.html.erb:55
+app/views/main/new.html.erb:37
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:05:49 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 6765)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6853)
+Completed 500 Internal Server Error in 14ms (Allocations: 7980)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `destroy' for #<ActionView::Base:0x0000000004f920>):
+    52:     </div>
+    53: 
+    54:     <h2>Remove existing user</h2>
+    55:     <%= form_for @user, :method => destroy do |form|%>
+    56:         <div class="mb-3">
+    57:         <%= form.label :email %>
+    58:         <br>
+  
+app/views/main/new.html.erb:55
+app/views/main/new.html.erb:37
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:07:09 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 6832)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 6920)
+Completed 500 Internal Server Error in 21ms (Allocations: 8047)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `delete' for #<ActionView::Base:0x0000000004fc40>):
+    52:     </div>
+    53: 
+    54:     <h2>Remove existing user</h2>
+    55:     <%= form_for @user, :method => delete do |form|%>
+    56:         <div class="mb-3">
+    57:         <%= form.label :email %>
+    58:         <br>
+  
+app/views/main/new.html.erb:55
+app/views/main/new.html.erb:37
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:07:33 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 3126)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 3474)
+Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 4640)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:08:21 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 3012)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3360)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 4532)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:08:39 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3024)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3372)
+Completed 200 OK in 15ms (Views: 12.9ms | Allocations: 4544)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:08:46 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3012)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3360)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 4532)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:14:12 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 3065)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 3416)
+Completed 200 OK in 19ms (Views: 17.7ms | Allocations: 4589)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:14:27 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3059)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3407)
+Completed 200 OK in 7ms (Views: 6.6ms | Allocations: 4579)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:14:48 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3072)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3420)
+Completed 200 OK in 9ms (Views: 8.0ms | Allocations: 4592)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:15:14 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1561)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1650)
+Completed 500 Internal Server Error in 12ms (Allocations: 2784)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="d-flex align-items-center justify-content-center">
+    <h1>Welcome page</h1>
+</div>
+
+<%= form_with model: @user , url:users_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :user_type %>
+        <br>
+        <%= form.text_field :user_type , class:"form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password%>
+        <br>
+        <%= form.password_field :password , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password_confirmation%>
+        <br>
+        <%= form.password_field :password_confirmation , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit ,class: "btn btn-primary"%>
+    </div>
+
+<%end %>
+
+<h2>Update existing user</h2>
+<%= form_for @user, :method => :put do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+            <%= form.label :user_type %>
+            <br>
+            <%= form.text_field :user_type , class:"form_control" %>
+        </div>
+    
+    <div class="mb-3">
+        <%= form.submit "Update User"%>
+    </div>
+
+    <h2>Remove existing user</h2>
+    <%= form_for @user, :method => :delete do |form|%>
+        <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+    <div class="mb-3">
+        <%= form.submit "Delete User" , class: "btn btn-primary"%>
+    </div>
+
+    <%end %>
+
+<%end %>
+
+):
+1:    <div class="d-flex align-items-center justify-content-center">
+2:        <h1>Welcome page</h1>
+3:    </div>
+4:    
+5:    <%= form_with model: @user , url:users_path do |form|%>
+6:        <div class="mb-3">
+7:            <%= form.label :email %>
+8:            <br>
+9:            <%= form.text_field :email , class: "form_control" %>
+10:        </div>
+11:    
+12:        <div class="mb-3">
+13:            <%= form.label :user_type %>
+14:            <br>
+15:            <%= form.text_field :user_type , class:"form_control" %>
+16:        </div>
+17:    
+18:        <div class="mb-3">
+19:            <%= form.label :password%>
+20:            <br>
+21:            <%= form.password_field :password , class:"form_control"%>
+22:        </div>
+23:    
+24:        <div class="mb-3">
+25:            <%= form.label :password_confirmation%>
+26:            <br>
+27:            <%= form.password_field :password_confirmation , class:"form_control"%>
+28:        </div>
+29:    
+30:        <div class="mb-3">
+31:            <%= form.submit ,class: "btn btn-primary"%>
+32:        </div>
+33:    
+34:    <%end %>
+35:    
+36:    <h2>Update existing user</h2>
+37:    <%= form_for @user, :method => :put do |form|%>
+38:        <div class="mb-3">
+39:            <%= form.label :email %>
+40:            <br>
+41:            <%= form.text_field :email , class: "form_control" %>
+42:        </div>
+43:    
+44:        <div class="mb-3">
+45:                <%= form.label :user_type %>
+46:                <br>
+47:                <%= form.text_field :user_type , class:"form_control" %>
+48:            </div>
+49:        
+50:        <div class="mb-3">
+51:            <%= form.submit "Update User"%>
+52:        </div>
+53:    
+54:        <h2>Remove existing user</h2>
+55:        <%= form_for @user, :method => :delete do |form|%>
+56:            <div class="mb-3">
+57:            <%= form.label :email %>
+58:            <br>
+59:            <%= form.text_field :email , class: "form_control" %>
+60:        </div>
+61:        <div class="mb-3">
+62:            <%= form.submit "Delete User" , class: "btn btn-primary"%>
+63:        </div>
+64:    
+65:        <%end %>
+66:    
+67:    <%end %>
+  
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:15:31 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1560)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1649)
+Completed 500 Internal Server Error in 5ms (Allocations: 2777)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="d-flex align-items-center justify-content-center">
+    <h1>Welcome page</h1>
+</div>
+
+<%= form_with model: @user , url:users_path do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :user_type %>
+        <br>
+        <%= form.text_field :user_type , class:"form_control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password%>
+        <br>
+        <%= form.password_field :password , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label :password_confirmation%>
+        <br>
+        <%= form.password_field :password_confirmation , class:"form_control"%>
+    </div>
+
+    <div class="mb-3">
+        <%= form.submit , class: "btn btn-primary"%>
+    </div>
+
+<%end %>
+
+<h2>Update existing user</h2>
+<%= form_for @user, :method => :put do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+
+    <div class="mb-3">
+            <%= form.label :user_type %>
+            <br>
+            <%= form.text_field :user_type , class:"form_control" %>
+        </div>
+    
+    <div class="mb-3">
+        <%= form.submit "Update User"%>
+    </div>
+
+    <h2>Remove existing user</h2>
+    <%= form_for @user, :method => :delete do |form|%>
+        <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+    <div class="mb-3">
+        <%= form.submit "Delete User" , class: "btn btn-primary"%>
+    </div>
+
+    <%end %>
+
+<%end %>
+
+):
+1:    <div class="d-flex align-items-center justify-content-center">
+2:        <h1>Welcome page</h1>
+3:    </div>
+4:    
+5:    <%= form_with model: @user , url:users_path do |form|%>
+6:        <div class="mb-3">
+7:            <%= form.label :email %>
+8:            <br>
+9:            <%= form.text_field :email , class: "form_control" %>
+10:        </div>
+11:    
+12:        <div class="mb-3">
+13:            <%= form.label :user_type %>
+14:            <br>
+15:            <%= form.text_field :user_type , class:"form_control" %>
+16:        </div>
+17:    
+18:        <div class="mb-3">
+19:            <%= form.label :password%>
+20:            <br>
+21:            <%= form.password_field :password , class:"form_control"%>
+22:        </div>
+23:    
+24:        <div class="mb-3">
+25:            <%= form.label :password_confirmation%>
+26:            <br>
+27:            <%= form.password_field :password_confirmation , class:"form_control"%>
+28:        </div>
+29:    
+30:        <div class="mb-3">
+31:            <%= form.submit , class: "btn btn-primary"%>
+32:        </div>
+33:    
+34:    <%end %>
+35:    
+36:    <h2>Update existing user</h2>
+37:    <%= form_for @user, :method => :put do |form|%>
+38:        <div class="mb-3">
+39:            <%= form.label :email %>
+40:            <br>
+41:            <%= form.text_field :email , class: "form_control" %>
+42:        </div>
+43:    
+44:        <div class="mb-3">
+45:                <%= form.label :user_type %>
+46:                <br>
+47:                <%= form.text_field :user_type , class:"form_control" %>
+48:            </div>
+49:        
+50:        <div class="mb-3">
+51:            <%= form.submit "Update User"%>
+52:        </div>
+53:    
+54:        <h2>Remove existing user</h2>
+55:        <%= form_for @user, :method => :delete do |form|%>
+56:            <div class="mb-3">
+57:            <%= form.label :email %>
+58:            <br>
+59:            <%= form.text_field :email , class: "form_control" %>
+60:        </div>
+61:        <div class="mb-3">
+62:            <%= form.submit "Delete User" , class: "btn btn-primary"%>
+63:        </div>
+64:    
+65:        <%end %>
+66:    
+67:    <%end %>
+  
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+app/views/main/new.html.erb:31: syntax error, unexpected label, expecting '='
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:15:40 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3059)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3410)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 4577)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:15:56 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3069)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3417)
+Completed 200 OK in 11ms (Views: 9.5ms | Allocations: 4589)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:16:04 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3086)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3434)
+Completed 200 OK in 16ms (Views: 13.4ms | Allocations: 4606)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:19:39 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>"staff"}, "commit"=>"Delete User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 1143)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:22:02 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>"student"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 3138)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/main_controller.rb:26:in `delete'
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:23:55 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>"student"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = ''[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 1.1ms | Allocations: 3106)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 14:24:43 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('booi@gmail.com', 'student', '$2a$12$G0fWMzQKT0zqkFSs4.8W1Oc.iil1GbssehjCC0Qilx6YzuNrjDFRS', '2022-03-14 14:24:43.867830', '2022-03-14 14:24:43.867830')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (100.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 307ms (ActiveRecord: 102.7ms | Allocations: 4147)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:25:12 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "user_type"=>"student"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = ''[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1125)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:28:15 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"vusumzi@gmail.com", "user_type"=>"student"}, "commit"=>"Delete User"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'vusumzi@gmail.com'[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 2[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (204.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 215ms (Views: 2.2ms | ActiveRecord: 205.8ms | Allocations: 2829)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:28:40 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"booi@gmail.com", "user_type"=>"student"}, "commit"=>"Delete User"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'booi@gmail.com'[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 3[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (140.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 151ms (Views: 1.4ms | ActiveRecord: 141.7ms | Allocations: 2737)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 14:29:40 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('imitha@gmail.com', 'student', '$2a$12$eng6PDEmuQmGe7mA/zyUD.6T6nVDJc8eoJqzTstjIhej4YP4wk0sy', '2022-03-14 14:29:40.307181', '2022-03-14 14:29:40.307181')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (148.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 351ms (ActiveRecord: 148.9ms | Allocations: 2370)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:29:52 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"student"}, "commit"=>"Delete User"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com'[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 4[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (169.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 179ms (Views: 1.5ms | ActiveRecord: 170.3ms | Allocations: 2739)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 14:31:12 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('imitha@gmail.com', 'student', '$2a$12$oPcrytLFZS8YjSt0wWgcfezvUk3fncjzyMNfoDQkGPegsoWvfA/DC', '2022-03-14 14:31:12.516306', '2022-03-14 14:31:12.516306')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (164.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 361ms (ActiveRecord: 164.8ms | Allocations: 2362)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:31:39 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com'[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 5[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (257.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 2)
+Completed 200 OK in 267ms (Views: 1.3ms | ActiveRecord: 258.7ms | Allocations: 2725)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:34:20 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com'[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1586)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:35:27 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 3106)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3457)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 4670)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:35:30 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 1878)
+
+
+  
+NoMethodError (undefined method `user_type=' for nil:NilClass):
+  
+app/controllers/main_controller.rb:18:in `update'
+Started POST "/users" for 127.0.0.1 at 2022-03-14 14:35:50 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1087)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:35:54 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>""}, "commit"=>"Delete User"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = ''[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1073)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:35:56 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 1597)
+
+
+  
+NoMethodError (undefined method `user_type=' for nil:NilClass):
+  
+app/controllers/main_controller.rb:18:in `update'
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:36:36 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms | Allocations: 3249)
+
+
+  
+NoMethodError (undefined method `user_type=' for nil:NilClass):
+  
+app/controllers/main_controller.rb:18:in `update'
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:36:47 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms | Allocations: 3247)
+
+
+  
+NoMethodError (undefined method `user_type=' for nil:NilClass):
+  
+app/controllers/main_controller.rb:18:in `update'
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:38:05 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2713)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3061)
+Completed 200 OK in 33ms (Views: 5.9ms | ActiveRecord: 2.1ms | Allocations: 6761)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:38:11 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"staff"}, "commit"=>"Create User"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 2010)
+
+
+  
+NoMethodError (undefined method `user_type=' for nil:NilClass):
+  
+app/controllers/main_controller.rb:18:in `update'
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:39:02 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2187)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2357)
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 2.1ms | Allocations: 5727)
+
+
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:39:14 +0000
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3093)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3441)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4646)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:39:17 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"imitha@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'imitha@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 2012)
+
+
+  
+NoMethodError (undefined method `user_type=' for nil:NilClass):
+  
+app/controllers/main_controller.rb:18:in `update'
+Started GET "/" for 127.0.0.1 at 2022-03-14 14:41:03 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by MainController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/new.html.erb within layouts/application
+  Rendered main/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 5779)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6199)
+Completed 200 OK in 23ms (Views: 11.1ms | ActiveRecord: 2.1ms | Allocations: 18042)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-03-14 14:41:34 +0000
+Processing by MainController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"masibone@gmail.com", "user_type"=>"student", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `user_type`, `password_digest`, `created_at`, `updated_at`) VALUES ('masibone@gmail.com', 'student', '$2a$12$8KYSUqx3NQJGy1XRdTkXNOM0cpDSTAI/FUP7bP9Afe2JvU2mk5CMW', '2022-03-14 14:41:35.123631', '2022-03-14 14:41:35.123631')[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (141.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:8:in `create'
+No template found for MainController#create, rendering head :no_content
+Completed 204 No Content in 346ms (ActiveRecord: 141.6ms | Allocations: 3997)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:42:04 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"masibone@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'masibone@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE `users` SET `users`.`user_type` = 'user_type', `users`.`updated_at` = '2022-03-14 14:42:04.668691' WHERE `users`.`id` = 6[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (178.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 192ms (Views: 2.4ms | ActiveRecord: 179.3ms | Allocations: 5162)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:42:28 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"masibone@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'masibone@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 7ms (Views: 1.0ms | ActiveRecord: 0.6ms | Allocations: 1326)
+
+
+Started PUT "/users" for 127.0.0.1 at 2022-03-14 14:42:53 +0000
+Processing by MainController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"masibone@gmail.com", "user_type"=>"staff"}, "commit"=>"Update User"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'masibone@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/main_controller.rb:17:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE `users` SET `users`.`user_type` = 'staff', `users`.`updated_at` = '2022-03-14 14:42:53.487460' WHERE `users`.`id` = 6[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  [1m[36mTRANSACTION (112.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:19:in `update'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 127ms (Views: 3.0ms | ActiveRecord: 115.7ms | Allocations: 6480)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:43:09 +0000
+  
+ActionController::RoutingError (No route matches [DELETE] "/users"):
+  
+Started DELETE "/users" for 127.0.0.1 at 2022-03-14 14:43:29 +0000
+Processing by MainController#delete as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"masibone@gmail.com"}, "commit"=>"Delete User"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'masibone@gmail.com'[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 6[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  [1m[36mTRANSACTION (145.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/main_controller.rb:25:in `delete'
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 161ms (Views: 4.0ms | ActiveRecord: 148.2ms | Allocations: 6125)
+
+

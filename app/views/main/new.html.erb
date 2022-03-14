@@ -3,44 +3,64 @@
 </div>
 
 <%= form_with model: @user , url:users_path do |form|%>
-<div class="mb-3">
-    <%= form.label :email %>
-    <%= form.text_field :email , class:"form_control" %>
-</div>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
 
-<div class="mb-3">
-    <%= form.label :user_type %>
-    <%= form.text_field :type , class:"form_control" %>
-</div>
+    <div class="mb-3">
+        <%= form.label :user_type %>
+        <br>
+        <%= form.text_field :user_type , class:"form_control" %>
+    </div>
 
-<div class="mb-3">
-    <%= form.label :password%>
-    <%= form.password_field :password , class:"form_control"%>
-</div>
+    <div class="mb-3">
+        <%= form.label :password%>
+        <br>
+        <%= form.password_field :password , class:"form_control"%>
+    </div>
 
-<div class="mb-3">
-    <%= form.label :password_confirmation%>
-    <%= form.password_field :password_confirmation , class:"form_control"%>
-</div>
+    <div class="mb-3">
+        <%= form.label :password_confirmation%>
+        <br>
+        <%= form.password_field :password_confirmation , class:"form_control"%>
+    </div>
 
-<div class="mb-3">
-    <%= form.submit%>
-</div>
+    <div class="mb-3">
+        <%= form.submit%>
+    </div>
 
 <%end %>
 
-<button id="testButton" onclick=doClick()>Click me</button>
+<h2>Update existing user</h2>
+<%= form_for @user, :method => :put do |form|%>
+    <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
 
-<!--Table-->
-<table id='userTable' class="table table-hover ">
-            <thead>
-                <th style="text-align:center;" class="col-2">Email</th>
-                <th style="text-align:center;" class="col-6">User user_type</th>
-            </thead>
+    <div class="mb-3">
+            <%= form.label :user_type %>
+            <br>
+            <%= form.text_field :user_type , class:"form_control" %>
+        </div>
+    
+    <div class="mb-3">
+        <%= form.submit "Update User" , class: "btn btn-primary"%>
+    </div>
+    <%end %>
 
-            <tbody id="tableBody"></tbody>
+    <h2>Remove existing user</h2>
+    <%= form_for @user, :method => :delete do |form|%>
+        <div class="mb-3">
+        <%= form.label :email %>
+        <br>
+        <%= form.text_field :email , class: "form_control" %>
+    </div>
+    <div class="mb-3">
+        <%= form.submit "Delete User" , class: "btn btn-secondary"%>
+    </div>
 
-        </table>
-
-<!--Import javascript-->
-<%=javascript_include_tag "script"%>
+    <%end %>
